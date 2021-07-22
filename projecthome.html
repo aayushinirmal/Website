@@ -1,0 +1,314 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.topnav{
+			height: 40px;
+			background-color: black;
+			padding-bottom: 10px;
+			
+		}
+.dropbtn {
+    background-color: whitesmoke;
+    padding: 5px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: whitesmoke;}
+	
+	
+		
+		* {
+    box-sizing: border-box;
+}
+
+		
+		.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+	width: 100px;
+ margin-top: 3px;
+  font-size: 15px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+ margin-top: 3px;
+  margin-right: 16px;
+font-size: 21px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 100px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+		.topnav .shopcart{
+			float: right;
+			position: relative;
+			margin-right: 12px;
+			margin-top: 10px;
+			font-size: 20px;
+		}
+		span.fon{
+		 font-size: 24;
+	      font-family: courier new;
+			font-weight: 400;
+			color: azure;
+			margin-left: 540px;
+			margin-top: 4px;
+		}
+		
+		
+		
+		
+		
+		.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: blanchedalmond;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: white;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+		
+		
+		.topnav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: darkslategray;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+#slidy-container { 
+	margin: 0px auto;
+  width:98%; overflow: hidden; height: 500px;
+}
+		
+	.timeline
+		{
+			width: 100%;
+			display: flex;
+			
+		}
+		.product
+		{
+			margin-top: 20px;
+			flex: 1;
+			padding: 5px;
+			border: 2px;
+			border-color: gainsboro;
+			
+		}
+</style>
+	</head><body>
+	<div class="topnav">
+		<div class="dropdown">
+  	<button class="dropbtn"><img src="th.jpg" width="28px" height="30px"></button>
+  			<div class="dropdown-content">
+    		<b><a href="login.html">Login</a>
+				<a href="signup.html">Sign up</a>
+    		
+				 <button class="dropdown-btn">Categories
+    <i class="fa fa-caret-down"></i>
+  </button>
+				 <div class="dropdown-container">
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Kids</a>
+  </div>
+    		<a href="#">My Account</a>
+				<a href="map.html">Contact us</a></b>
+				</div>
+		</div>
+		
+		<span class="fon">Shoppit&trade;</span>
+		 <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+		<div class="shopcart">
+<a href="#">
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+        </a></div>
+</div>
+	<div id="slidy-container">
+  <figure id="slidy">
+  <a href="#">  <img src="img1.jpg" ></a>
+	 <a href="#"> <img src="img2.jpg" ></a>
+	 <a href="#"> <img src="kid2.jpg" ></a>
+	  	     <a href="#"> <img src="img7.jpg" ></a>
+	<a href="#">  <img src="img9.jpg"></a>
+	  	    <a href="#">  <img src="img8.jpg" ></a>
+
+  </figure>
+</div>
+	
+	<br>
+	<br>
+	<center><b><em>Best sellers:</em></b></center>
+	<div class="timeline">
+		<div class="product">
+			<img src="img10.jpg" width="400px" height="500px"><br><br><a href="#">Buy now for $2200</a>
+		</div>
+		
+		<div class="product">
+			<img src="img11.jpg" width="400px" height="500px"><br><br><a href="#">Buy now for $200</a>
+		</div>
+		
+		<div class="product">
+			<img src="img12.jpg" width="400px" height="500px"><br><br><a href="#">Buy now for $220</a>
+		</div>
+	</div>
+	
+	
+	<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+		var timeOnSlide = 3, 		
+    // the time each image will remain static on the screen, measured in seconds
+timeBetweenSlides = 1, 	
+    // the time taken to transition between images, measured in seconds
+
+// test if the browser supports animation, and if it needs a vendor prefix to do so
+    animationstring = 'animation',
+    animation = false,
+    keyframeprefix = '',
+    domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+    // array of possible vendor prefixes
+    pfx  = '',
+    slidy = document.getElementById("slidy"); 
+if (slidy.style.animationName !== undefined) { animation = true; } 
+// browser supports keyframe animation w/o prefixes
+
+if( animation === false ) {
+  for( var i = 0; i < domPrefixes.length; i++ ) {
+    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+      pfx = domPrefixes[ i ];
+      animationstring = pfx + 'Animation';
+      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+      animation = true;
+      break;
+    }
+  }
+}
+
+if( animation === false ) {
+  // animate in JavaScript fallback
+} else {
+  var images = slidy.getElementsByTagName("img"),
+      firstImg = images[0], 
+      imgWrap = firstImg.cloneNode(false);  // copy it.
+  slidy.appendChild(imgWrap); // add the clone to the end of the images
+  var imgCount = images.length, // count the number of images in the slide, including the new cloned element
+      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), // calculate the total length of the animation by multiplying the number of _actual_ images by the amount of time for both static display of each image and motion between them
+      slideRatio = (timeOnSlide / totalTime)*100, // determine the percentage of time an induvidual image is held static during the animation
+      moveRatio = (timeBetweenSlides / totalTime)*100, // determine the percentage of time for an individual movement
+      basePercentage = 100/imgCount, // work out how wide each image should be in the slidy, as a percentage.
+      position = 0, // set the initial position of the slidy element
+      css = document.createElement("style"); // start marking a new style sheet
+  css.type = "text/css";
+  css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the slidy container
+  css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+  css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+  for (i=0;i<(imgCount-1); i++) { // 
+    position+= slideRatio; // make the keyframe the position of the image
+    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+    position += moveRatio; // make the postion for the _next_ slide
+    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+}
+  css.innerHTML += "}\n";
+  css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
+document.body.appendChild(css); // add the new stylesheet to the end of the document
+}
+
+</script></body></html>
